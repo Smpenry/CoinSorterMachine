@@ -7,6 +7,7 @@ import java.util.Scanner;
  * Coin Sorter Machine that takes a file and spits out the amount of coins and their total value in said file
  * @author spenry
  * @version 03.30.23
+ * got help from riley kim/worked together
  */
 
 public class CoinSorterMachine {
