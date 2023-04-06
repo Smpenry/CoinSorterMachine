@@ -14,7 +14,6 @@ public class CoinSorterMachine {
     private ArrayList<Coin> coinMap;
     private int[] coinCounts = {0,0,0,0,0,0}; // P, N, D, Q, HD, D
 
-
     public CoinSorterMachine(){
 
         coins = new ArrayList<>();
@@ -28,7 +27,6 @@ public class CoinSorterMachine {
         coinMap.add(new HalfDollar());
         coinMap.add(new Dollar());
     }
-
 
     public void depositCoins(){
         Scanner userIn = new Scanner(System.in);
@@ -55,7 +53,6 @@ public class CoinSorterMachine {
             e.printStackTrace();
         }
     }
-
 
     public void printDepositSummary(){
         DecimalFormat df = new DecimalFormat("$0.00");
@@ -87,9 +84,7 @@ public class CoinSorterMachine {
         return total;
     }
 
-
     public static void main(String[] args){
-
         CoinSorterMachine app = new CoinSorterMachine();
         app.depositCoins();
         app.printDepositSummary();
